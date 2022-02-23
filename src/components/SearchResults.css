@@ -1,0 +1,19 @@
+.search-list {
+  list-style: none;
+  margin: 50px 200px;
+  cursor: pointer;
+}
+
+.search-list > li {
+  padding: 15px;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.search-list > li:hover {
+  background: pink;
+}
+
+.space {
+  flex: 1 1 auto;
+}
