@@ -1,3 +1,7 @@
+.house-container {
+  padding: 10px 100px;
+}
+
 .house-container > * {
   margin: 10px;
 }
