@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./Header";
 import HouseFilter from "./HouseFilter";
+import HouseById from "./HouseById";
 import FeatureHouse from "./FeaturedHouse";
 import SearchResults from "./SearchResults";
 import HousesContext from "../contexts/houseContext";
@@ -17,6 +18,7 @@ function App() {
           <HouseFilter></HouseFilter>
           <Routes>
             <Route path="/search/:country" element={<SearchResults />} />
+            <Route path="/house/:id" element={<HouseById />} />
             <Route path="/" element={<FeatureHouse />} />
           </Routes>
         </HousesContext.Provider>
