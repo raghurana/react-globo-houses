@@ -4,7 +4,7 @@ import "./Header.css";
 type HeaderProps = { title: string };
 
 const Header = (props: HeaderProps) => (
-  <div className="container">
+  <div className="header-container">
     <img src={logo} alt="logo" />
     <h1>{props.title}</h1>
   </div>

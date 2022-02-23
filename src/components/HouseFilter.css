@@ -1,0 +1,13 @@
+.filter-container {
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+select {
+  flex-grow: 0.5;
+  height: 30px;
+}
