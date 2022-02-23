@@ -1,3 +1,7 @@
 .caption {
   text-align: center;
+  background: orange;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
 }
