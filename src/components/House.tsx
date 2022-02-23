@@ -1,19 +1,15 @@
 import "./House.css";
-import logo from "../assets/images/GloboLogo.png";
+import { House } from "../interfaces";
 
-const House = () => (
+const HouseComponent = (props: { house: House }) => (
   <div className="house-container">
-    <div>Country Name (from filter)</div>
-    <div className="address">Property Address</div>
+    <div>{props.house.country}</div>
+    <div className="address">{props.house.address}</div>
     <div className="even-columns">
-      <img src={logo} alt="p" />
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque tenetur minima ullam sequi, veritatis
-        voluptate pariatur aliquam numquam quod possimus incidunt similique delectus neque in dolorem assumenda dolores
-        vel.
-      </div>
+      <img src={`/images/${props.house.photo}.jpeg`} alt="House" />
+      <div className="house-desc">{props.house.description}</div>
     </div>
   </div>
 );
 
-export default House;
+export default HouseComponent;

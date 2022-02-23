@@ -17,4 +17,15 @@
 
 .even-columns > img {
   height: 400px;
+  border: 10px solid white;
+  border-radius: 300px;
+  padding: 0px;
+}
+
+.house-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  padding: 10px;
 }
