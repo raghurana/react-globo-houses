@@ -1,0 +1,20 @@
+.house-container > * {
+  margin: 10px;
+}
+
+.address {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.even-columns {
+  display: flex;
+}
+
+.even-columns > * {
+  flex-basis: 100%;
+}
+
+.even-columns > img {
+  height: 400px;
+}
