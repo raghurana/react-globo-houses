@@ -1,5 +1,5 @@
-.enquiry-container {
-  box-sizing: content-box;
+.enquiry-container > * {
+  margin-bottom: 5px;
 }
 
 .enquiry-container > input {
@@ -16,4 +16,5 @@
   float: right;
   padding: 10px;
   width: 30%;
+  margin-top: -5px;
 }

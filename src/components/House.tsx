@@ -2,8 +2,11 @@ import "./House.css";
 import { House } from "../interfaces";
 import emailIcon from "../assets/images/Email.png";
 import EnquiryForm from "./EnquiryForm";
+import { useState } from "react";
 
 const HouseComponent = (props: { house: House }) => {
+  const [enquiryFormVisible, setEnquiryFormVisible] = useState(false);
+
   if (!props.house) return <div>Loading...</div>;
   return (
     <div className="house-container">
@@ -14,8 +17,8 @@ const HouseComponent = (props: { house: House }) => {
         <div className="house-desc">
           <div className="priceTag">${props.house.price}</div>
           <div>{props.house.description}</div>
-          <img src={emailIcon} alt="inquiry" />
-          <EnquiryForm />
+          <img src={emailIcon} alt="inquiry" onClick={() => setEnquiryFormVisible(!enquiryFormVisible)} />
+          {enquiryFormVisible && <EnquiryForm />}
         </div>
       </div>
     </div>
