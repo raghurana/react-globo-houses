@@ -1,0 +1,19 @@
+.enquiry-container {
+  box-sizing: content-box;
+}
+
+.enquiry-container > input {
+  width: 99%;
+  height: 20px;
+}
+
+.enquiry-container > textarea {
+  width: 99%;
+  height: 50px;
+}
+
+.enquiry-container > button {
+  float: right;
+  padding: 10px;
+  width: 30%;
+}

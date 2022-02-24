@@ -1,6 +1,7 @@
 import "./House.css";
 import { House } from "../interfaces";
 import emailIcon from "../assets/images/Email.png";
+import EnquiryForm from "./EnquiryForm";
 
 const HouseComponent = (props: { house: House }) => {
   if (!props.house) return <div>Loading...</div>;
@@ -14,6 +15,7 @@ const HouseComponent = (props: { house: House }) => {
           <div className="priceTag">${props.house.price}</div>
           <div>{props.house.description}</div>
           <img src={emailIcon} alt="inquiry" />
+          <EnquiryForm />
         </div>
       </div>
     </div>
