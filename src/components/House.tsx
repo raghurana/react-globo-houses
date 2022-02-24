@@ -9,17 +9,23 @@ const HouseComponent = (props: { house: House }) => {
 
   if (!props.house) return <div>Loading...</div>;
   return (
-    <div className="house-container">
-      <div>{props.house.country}</div>
-      <div className="address">{props.house.address}</div>
-      <div className="even-columns">
-        <img src={`/images/${props.house.photo}.jpeg`} alt="House" />
-        <div className="house-desc">
-          <div className="priceTag">${props.house.price}</div>
-          <div>{props.house.description}</div>
-          <img src={emailIcon} alt="inquiry" onClick={() => setEnquiryFormVisible(!enquiryFormVisible)} />
-          {enquiryFormVisible && <EnquiryForm />}
-        </div>
+    <div className="even-columns">
+      <div className="column">
+        <div>{props.house.country}</div>
+        <div className="address">{props.house.address}</div>
+        <img src={`/images/${props.house.photo}.jpeg`} alt="House" className="house-pic" />
+      </div>
+
+      <div className="column">
+        <div className="priceTag">${props.house.price}</div>
+        <div>{props.house.description}</div>
+        <img
+          src={emailIcon}
+          alt="inquiry"
+          className="enquiry-icon"
+          onClick={() => setEnquiryFormVisible(!enquiryFormVisible)}
+        />
+        {enquiryFormVisible && <EnquiryForm />}
       </div>
     </div>
   );
